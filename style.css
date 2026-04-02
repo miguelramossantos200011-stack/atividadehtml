@@ -1,28 +1,49 @@
+@font-face {
+    font-family: 'arabe';
+    src: url('./imagens/RubikDirt-Regular') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 header {
 
     background-color: #ff3a3a;
     width: 100%;
-    text-align: center;
     padding: 10px;
     margin-top: 0; 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: flex-start; 
     align-items: center;
+    
+    
+}
+
+nav {
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+    
     
 }
 
 .title {
 
-    max-width: 50%;
+    max-width: 100%;
     margin-left: 0%;
+    margin: auto;
 
 }
 
 body {
 
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWSMktO4DCO3sIcZWb-tSEtv8SsFN6GoEWQ&s");
-   
+    font-family: 'arabe',sans-serif;
+    background-image: url("./imagens/fundo.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -32,6 +53,7 @@ body {
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
+    overflow-x: hidden;
 
 }
 
@@ -77,8 +99,52 @@ footer {
     background-position: center;
     height: 90px;
     display: flex;
-    margin-right: 92%;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 1%;
 
 }
+
+.carrinho {
+
+    max-width: 100px;
+    background-size: contain;   
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 90px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1%;
+
+}
+
+.cardapio {
+
+    max-width: 100px;
+    background-size: contain;   
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 90px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1%;
+
+}
+
+.traco {
+
+    max-width: 100px;
+    background-size: contain;   
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 90px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+
