@@ -1,0 +1,70 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-fundo-container: #cfbc67;
+    --cor-header: #cfbc67;
+    --cor-fundo: #ffffff;
+    --cor-texto-branco: #ffffff;
+    --cor-preco: #ff3a3a;
+}
+
+body {
+
+    background-color:  var(--cor-fundo);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+
+    background-color: var(--cor-header);
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+
+}
+
+nav {
+
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.title {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+
+
