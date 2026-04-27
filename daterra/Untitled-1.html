@@ -1,39 +1,77 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores da terra</title>
+    <title>Sabores da Terra</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-        <header>
-            <nav>
+    <header>
+        <nav>
+            <div class="titulo"><h1>Sabores da Terra</h1></div>
+            <div class="area-de-busca">
+                <input type="checkbox" id="btn-p" class="btn-pesquisa">
+                <label for="btn-p" class="search-label">
+                    <img src="./imagen/lupa.png" alt="Buscar" class="pesquisa-icone">
+                </label>
+                <div class="barra-de-busca">
+                    <input type="text" placeholder="Buscar" class="input-pesquisa">
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                <div class = "titulo"><h1>Sabores da terra</h1></div>
+    <div class="ubr">
+        <span>grãos e sementes</span>
+        <span>temperos</span>
+        <span>óleos naturais</span>
+        <span>veganos</span>
+        <span>suplementos</span>
+        <span>ofertas</span>
+    </div>
 
-                <div class = "loja"><h4>acesse nossa loja</h4></div>
+    <div class="texto1">
+        <h2>Bem vindo a melhor loja de produtos naturais!</h2>
+        <h3>Conectando você à pureza da natureza. Produtos selecionados com rigor para garantir saúde, energia e muito sabor para o seu dia a dia.</h3>
+    </div>
 
-                <div class = "sobre"><h4>sobre</h4></div>
-            
-            </nav>
-        </header>
-
-        <div class = "ubr">
-
-           <a>ervas para chá</a> <a>frutas secas</a> <a>geleias</a> <a>farinhas</a> <a>bebidas</a> <a>compre por marca</a>
-
+    <div class="carrossel-container">
+        <h2 class="carrossel-titulo">Mais Vendidos</h2>
+        <div class="carrossel">
+            <div class="carrossel-item">
+                <img src="./imagen/castanha.png">
+                <h3>Castanha do Pará</h3>
+                <p>R$ 45,90</p>
+            </div>
+            <div class="carrossel-item">
+                <img src="./imagen/amendoim.webp">
+                <h3>Amendoim</h3>
+                <p>R$ 7,50</p>
+            </div>
+            <div class="carrossel-item">
+                <img src="./imagen/cacau.png">
+                <h3>Cacau em Pó 100%</h3>
+                <p>R$ 22,50</p>
+            </div>
+            <div class="carrossel-item">
+                <img src="./imagen/lichia.png">
+                <h3>Lichia</h3>
+                <p>R$ 38,00</p>
+            </div>
+            <div class="carrossel-item">
+                <img src="./imagen/matcha.png">
+                <h3>Matchá Puro</h3>
+                <p>R$ 75,90</p>
+            </div>
+            <div class="carrossel-item">
+                <img src="https://via.placeholder.com/200x150?text=Sal+do+Himalaia" alt="Sal Rosa do Himalaia">
+                <h3>Feijão com Farinha</h3>
+                <p>R$ 67,67</p>
+            </div>
         </div>
+    </div>
 
-        <div class = "texto1">
-            
-            <h2>Bem vindo a melhor loja de produtos naturais do Brasil</h2>
-            <h3>Da semente ao prato, a Sabores da Terra traz alimentos autênticos, sem processamentos desnecessários e cheios de frescor. Viva com mais leveza, equilíbrio e sabor.</h3>
-            
-        </div>
-
-
-    
 </body>
 </html>
