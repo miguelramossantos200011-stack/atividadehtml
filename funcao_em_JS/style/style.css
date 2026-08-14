@@ -1,0 +1,37 @@
+.retangulo  {
+
+    height: 200px;
+    width: 400px;
+
+    background-color: rgb(146, 94, 30);
+
+    align-items: center;
+
+    padding: 10px;
+
+    margin: auto;
+
+}
+
+.circulo{
+
+    margin: 30px auto;
+
+    width: 70px;
+    height: 70px;
+
+    background-color: chartreuse;
+    
+    border-radius: 100%;
+
+}
+
+main{
+
+    text-align: center;
+
+}
+
+#txt{
+    
+}
