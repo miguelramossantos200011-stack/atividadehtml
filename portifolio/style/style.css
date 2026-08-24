@@ -1,0 +1,91 @@
+header{
+
+    display: flex;
+    flex-direction: row;
+    
+    height: 20%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: brown;
+
+
+}
+
+.Icon{
+
+    height: 70px;
+    width: 70px;
+
+    img{
+        
+        height: 100%;
+        width: 100%;
+
+    }
+
+
+}
+
+.foto{
+
+    height: 70px;
+    width: 70px;
+
+    img{
+        
+        height: 100%;
+        width: 100%;
+
+    }+
+
+}
+
+.main{
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: blue;
+    
+    height: 70%;
+    width: 100%;
+
+}
+
+.sidebar{
+
+    height: 70%;
+    width: 30%;
+
+    background-color: chartreuse;
+
+}
+
+.corpo{
+
+    height: 70%;
+    width: 70%;
+
+    background-color: rgb(39, 63, 15);
+
+}
+
+
+
+footer{
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 10%;
+    width:  100%;
+
+    background-color: coral;
+
+}
