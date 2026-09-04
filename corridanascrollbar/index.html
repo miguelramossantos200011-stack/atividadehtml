@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    
+</head>
+<body onresize="acao4()">
+
+    <div class="parte1">
+        <h1>parte 1</h1>
+        <label>Nome:</label>
+        <input onkeydown="acao1()" type="text"><br><br>
+
+        <label>Nome:</label>
+        <input onkeypress="acao2(event)" type="text"><br><br>
+
+        <label>Nome:</label>
+        <input onkeyup="acao3()" type="text"><br><br>
+    </div>
+
+    <div class="parte2">
+        <h1>Parte 2</h1>
+        <label>
+            <input onfocus="acao5()" onblur="acao6()" type="text">
+            <input id="dois" type="text"> <br><br>
+            <h2>escolha</h2>
+            <select onchange="acao7()">
+                <option value="1">Primeira opção</option>
+                <option value="2">Segunda opção</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="parte3">
+        <h3>titulo 1</h3>
+        <h3>subtitulo 1</h3>
+        <h3>pretexto 1</h3>
+    </div>
+
+    <!-- O container e a imagem real do foguete -->
+    <div id="scroll-track">
+         <img id="scroll-icon" src="https://ibb.co" alt="Foguete">
+    </div>
+
+    <script>
+        function acao1(){
+            alert('evento onkeydown')
+            document.getElementById("dois").focus()
+        }
+
+        function acao2(event){
+            alert("evento onkeypress você teclou: " + event.keyCode)
+            document.getElementById("dois").focus()
+        }
+
+        function acao3(){
+            alert('evento onkeyup')
+            document.getElementById("dois").focus()
+        }
+
+        function acao4(){
+            alert("janela ajustada: largura: " + window.innerWidth)
+            alert("janela ajustada: altura: " + window.innerHeight)
+        }
+
+        function acao5(){
+            alert('Scroll acionado')
+            document.getElementById("dois").focus()
+        }
+
+        function acao6(){
+            alert('perdeu o foco')
+            document.getElementById("dois").focus()
+        }
+
+        function acao7(){
+            alert('estado foi modificado')
+            document.getElementById("dois").focus()
+        }
+
+        // Script do movimento ajustado para não quebrar a centralização
+        const icon = document.getElementById('scroll-icon');
+
+        window.addEventListener('scroll', () => {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = window.scrollY;
+            
+            if (totalHeight > 0) {
+                const availableTrackHeight = window.innerHeight - icon.clientHeight;
+                const iconY = (progress / totalHeight) * availableTrackHeight;
+                
+                // IMPORTANTE: Mantém o translateX(-50%) para continuar centralizado e adiciona o translateY do movimento
+                icon.style.transform = `translateX(-50%) translateY(${iconY}px)`;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+:root {
+
+ --cor-fundo: #bb938b;
+ --cor-footer: #19c519;
+
+}
+
+body{
+
+background-color: var(--cor-fundo);
+min-height: 2500px; 
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+}
+
+
+
+footer{
+
+background-color: var(--cor-footer);
+
+}
+
+/* 1. SEU TRUQUE CSS: Torna a barra de rolagem nativa invisível, mas mantém o funcionamento */
+        ::-webkit-scrollbar {
+            width: 25px; /* Largura reservada para a barra e para o foguete */
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05); /* Um fundo bem discreto para guiar o foguete */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: transparent; /* Esconde o bloco cinza nativo do Windows */
+        }
+
+        /* 2. O CONTAINER DO FOGUETE: Ocupa exatamente o espaço da scrollbar no canto direito */
+        #scroll-track {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 25px; /* Mesma largura definida no ::-webkit-scrollbar */
+            height: 100vh;
+            z-index: 99999;
+            pointer-events: none; /* Permite rolar a página mesmo com o mouse em cima dele */
+        }
+
+        /* 3. O FOGUETE: Centralizado perfeitamente dentro da calha da scrollbar */
+        #scroll-icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* Centraliza horizontalmente na barra */
+            width: 22px; /* Tamanho ligeiramente menor que a barra para não cortar nas bordas */
+            height: auto;
+            will-change: transform;
+        }

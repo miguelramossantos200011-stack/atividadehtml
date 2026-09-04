@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 4000px; 
+    overflow-y: hidden; 
+    overflow-x: scroll; 
+    background-color: #333;
+}
+
+.rua {
+    background-color: #222;
+    height: 300px;
+    position: relative;
+}
+
+.rua a {
+    color: white;
+    font-family: sans-serif;
+    position: fixed;
+    left: 20px;
+    top: 70px;
+    z-index: 10;
+}
+
+.calcada {
+    height: 50px;
+    background-color: #777;
+}
+
+
+.carro {
+    position: fixed; 
+    left: 0;
+    width: 100px; 
+    will-change: transform;
+}
+
+.carro img {
+    width: 100%;
+    height: auto;
+}
+
+#c1 { top: 120px; }
+#c2 { top: 190px; }
+#c3 { top: 260px; }
